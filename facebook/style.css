@@ -14,7 +14,7 @@
   /*
     3. Allow percentage-based heights in the application
   */
-  html, body {
+  html, body, .front-page {
     height: 100%;
   }
   /*
@@ -55,34 +55,10 @@
     isolation: isolate;
   }
 
-  h1 {
-    color: rgb(207, 26, 26);
-    font-weight: 100;
-    font-size: 3rem;
-    font-family: Helvetica, sans-serif;
-    margin: 40px 0px 8px 0px
-  }
+  /* From Andrei Neagoie: ZTM web dev 0 to mastery */
 
-  
-  p > span {
+.front-page > section {
+    height: 100%;
+    width: 50%;
     float: left;
-    font-size: 70px;
-    color: rgb(202, 202, 202);
-    line-height: 90%;
-    width: .7em;
-  }
-
-section > a {
-    display: block;
-    text-align: right;
-    color: rgb(207, 26, 26);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.divider {
-    height: 1px;
-    background-color: rgb(230, 230, 230);
-    margin: 40px 0px;
-
 }
