@@ -1,0 +1,163 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    font-size: 14px;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body, .front-page {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 0px;
+    margin: auto;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /* From Andrei Neagoie: ZTM web dev 0 to mastery */
+  
+.float-25 {
+    float: left;
+    width: 25%;
+}
+
+.float-50 {
+    float: left;
+    width: 50%;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  header {
+      background-color: rgb(3, 88, 3);
+  }
+
+  header > div {
+      text-align: center;
+      color: white;
+      padding: 8px 0;
+  }
+
+  header > div > span {
+      display: block;
+      padding-top: 8px;
+  }
+
+  .front-text {
+      font-size: 60px;
+      font-weight: bolder;
+      text-align: center;
+      width: 75%;
+      margin: auto;
+  }
+
+  h1 {
+      font-size: 24px;
+      font-weight: bolder;
+  }
+
+  nav {
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid rgb(184, 184, 184);
+  }
+
+  nav a {
+      display: inline-block;
+      padding: 16px 16px
+  }
+
+  .bottom-border {
+    border-bottom: 2px solid rgb(4, 100, 4)
+  }
+
+  .front-pg-img {
+      margin: auto;
+      height: 300px;
+      width: 600px;
+  }
+
+  .layout {
+    padding: 40px 70px;
+  }
+
+  .layout > section {
+    float: left;
+    width: 25%;
+    padding: 8px 16px;
+    padding-bottom: 32px;
+  }
+
+  .layout > section > img {
+      width: 100%;
+      border-top: 2px solid green;
+      padding-top: 20px;
+  }
+
+  footer {
+      text-align: center;
+      color: grey;
+      background-color: black;
+      padding-top: 16px;
+  }
+
+  footer > div > a {
+      padding: 0 8px;
+  }
+
+  .fa-brands {
+      padding: 4px 8px;
+      font-size: 24px;
+  }
+
+
+
+
+
+
+
+

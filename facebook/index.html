@@ -2,71 +2,68 @@
 
 <head>
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <title>Facebook</title>
+    <script src="https://kit.fontawesome.com/289010acce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="content">
         <h1>facebook</h1>
         <section>
             <form>
                 <input type="text" id="email" placeholder="Email or Phone">
-                <input type="text" id="password" placeholder="Password">
+               <div> <input type="text" id="password" placeholder="Password"><a>Forgot account?</a></div> 
                 <button>Log In</button>
-                <a>Forgot account?</a>
             </form>
         </section>
+    </header>
         <section class="front-page">
-            <section>
+            <section class="fp-left-side">
                 <h2>
                     Connect with friends and the world around you on Facebook.
                 </h2>
                 <ul>
-                    <li><img href="#"/>
-                        <p><span>See photos and updates</span>from friends in the News Feed.</p>
-                    </li>
-                    <li><img />
-                        <p><span>Share what's new</span>in your life on your Timeline.</p>
-                    </li>
-                    <li><img />
-                        <p><span>Find more of what you're looking with Facebook Search.</span></p>
+                    <li><i class="fa-solid fa-newspaper"></i><p><span>See photos and updates</span>from friends in the News Feed.</p></li>
+                    <li><i class="fa-solid fa-display"></i><p><span>Share what's new</span>in your life on your Timeline.</p></li>
+                    <li><i class="fa-solid fa-share-nodes"></i><p><span>Find more </span> of what you're looking with Facebook Search.</p>
                     </li>
                 </ul>
             </section>
             <section>
                 <h2>Sign Up</h2>
                 <p>It's quick and easy.</p>
-                <form>
-                    <input type="text" id="email" placeholder="Email or Phone">
-                    <input type="text" id="email" placeholder="Email or Phone">
-                    <input type="text" id="password" placeholder="Password">
-                    <input type="text" id="password" placeholder="Password">
-                    <select name="Sep" id="months"> 
+                <form class="sign-up">
+                    <input class="i-width-50" type="text" id="email" placeholder="Email or Phone">
+                    <input class="i-width-50" type="text" id="email" placeholder="Email or Phone">
+                    <input class="i-width-100" type="text" id="password" placeholder="Password">
+                    <input class="i-width-100" type="text" id="password" placeholder="Password">
+                    <p>Birthday</p>
+                    <select class="i-width-33" name="Sep" id="months"> 
                         <option value="Sep">Sep</option>
                     </select>
-                    <select name="Sep" id="months"> 
+                    <select class="i-width-33" name="Sep" id="months"> 
                         <option value="Sep">Sep</option>
                     </select> 
-                     <select name="Sep" id="months"> 
+                     <select class="i-width-33" name="Sep" id="months"> 
                         <option value="Sep">Sep</option>
                     </select>
-                    <select name="Sep" id="months"> 
+                    <p>Gender</p>
+                    <select class="i-width-33" name="Sep" id="months"> 
                         <option value="Sep">Sep</option>
                     </select>
-                    <select name="Sep" id="months"> 
+                    <select class="i-width-33" name="Sep" id="months"> 
                         <option value="Sep">Sep</option>
                     </select>
-                    <select name="Sep" id="months"> 
+                    <select class="i-width-33"  name="Sep" id="months"> 
                         <option value="Sep">Sep</option>
                     </select>
                     <span>By clicking Sign Up, you agree to our <a>Terms</a>, <a>Data Policy</a>and<a>Cookies Policy.</a>You may receive SMS Notificiations from us and can opt out any time.</span>
-                    <button>Sign Up</button>
+                   <div class="button"><button>Sign Up</button></div> 
                     <p><span>Create a Page</span> for a celebrity, band or business.</p>
                 </form>
                
             </section>
         </section>
-    </header>
 </body>
 
 </html>

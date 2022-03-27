@@ -1,0 +1,488 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  font-size: 14px;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body,
+.front-page {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  /* max-width: 1440px; */
+  margin: auto;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* From Andrei Neagoie: ZTM web dev 0 to mastery */
+
+.content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1 {
+  display: inline-block;
+  transform: translate(0, 6px);
+  margin-left: 8px;
+}
+
+.fa-facebook-square {
+  color: white;
+  font-size: 30px;
+}
+
+header {
+  background-color: rgb(79, 88, 207);
+  padding: 4px;
+}
+
+header i {
+  color: white;
+}
+
+.left-section ul li .fa-solid,
+.left-section ul li .fa-brands {
+  font-size: 18px;
+}
+
+header div {
+  display: inline-block;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 8px;
+  color: white;
+}
+
+header div input {
+  width: 425px;
+}
+
+.left-section {
+  float: left;
+  width: 15%;
+  background-color: rgb(240, 242, 245);
+  padding: 16px;
+}
+
+.left-section ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.left-section ul li {
+  display: block;
+  padding: 8px;
+}
+
+.left-section ul li p {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.middle-section {
+  float: left;
+  width: 50%;
+  background-color: rgb(240, 242, 245);
+
+}
+
+.middle-section-right {
+  float: left;
+  width: 20%;
+  background-color: rgb(240, 242, 245);
+}
+
+.section-right {
+  float: left;
+  width: 15%;
+  padding: 8px;
+  border-left: 1px solid grey;
+  background-color: rgb(240, 242, 245);
+
+}
+
+.section-right ul {
+    padding: 0;
+}
+
+.section-right ul > li {
+    list-style: none;
+}
+
+.inline-li li {
+    display: inline;
+}
+
+.inline-li li > img {
+    display: inline;
+}
+
+
+
+.ul-titles {
+  display: inline-block;
+  font-weight: lighter;
+  color: rgb(83, 83, 83);
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.middle-section {
+  padding: 12px 16px 0 16px;
+}
+
+.image-container {
+  padding: 8px;
+}
+
+.image-container > * {
+  display: inline-block;
+}
+
+.image-container > p {
+  transform: translate(0, -25px);
+  margin-left: 10px;
+  color: rgb(143, 143, 143);
+  font-size: 18px;
+}
+
+.create-post > ul {
+  display: block;
+  list-style: none;
+  width: 90%;
+  padding: 0;
+  text-align: center;
+  margin: auto;
+  border-top: 1px solid lightgray;
+  padding-top: 5px;
+}
+
+.create-post > ul > li {
+  display: inline-block;
+  padding: 16px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 40px;
+  margin: 0 4px;
+}
+
+.create-post > ul > li > span {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.create-post > div > h2 {
+  border: 1px solid lightgrey;
+  background-color: rgb(240, 242, 245);
+}
+
+section .create-post {
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+.fa-ellipsis {
+  width: 50px;
+}
+
+.user-image {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.stories {
+    background-color: white;
+    margin-top: 56px
+}
+
+.stories > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stories > ul > li {
+  display: inline-block;
+  background-image: url(https://source.unsplash.com/random/300x200);
+  width: 24.5%;
+  border-radius: 10px;
+  padding: 8px 4px;
+}
+
+.stories > ul > li > h2 {
+  color: white;
+  text-align: left;
+  padding: 8px;
+}
+
+.stories > div > h2 {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+
+.stories > div > h2 + h2 {
+  text-align: right;
+}
+
+.stories > ul > li > .user-image {
+  margin-bottom: 160px;
+  border: solid rgb(32, 111, 214);
+}
+
+.user-post > div > img {
+  display: inline-block;
+}
+
+.user-post > div > h2 {
+  display: inline-block;
+  transform: translate(0, -12px);
+  margin-left: 8px;
+}
+
+.user-post > div > h2 > span {
+  display: block;
+  font-weight: lighter;
+  color: rgb(97, 97, 97);
+}
+
+.user-post > div > h2 > span > i {
+  padding: 4px;
+}
+
+.user-post {
+    background-color: white;
+    margin-top: 54px;
+}
+.username-text {
+  color: rgb(4, 4, 170);
+}
+
+.your-pages-user {
+  background-color: lightgray;
+  color: grey;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.user-ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.user-ul li {
+    padding: 0;
+}
+
+.user-ul li > span  {
+    color: rgb(139, 137, 137);
+    margin-left: 4px;
+}
+
+.social li {
+  display: inline-block;
+  padding: 8px 7px 4px 7px;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+button {
+    font-size: 16px;
+    padding: 4px 20px;
+    margin-top: 8px;
+    background-color: white;
+    border: .1px solid lightgray;
+}
+
+.first-button {
+    background-color: rgb(231, 231, 231);
+    color: black;
+}
+
+.metrics-container {
+    font-size: 0;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+}
+
+.metrics-container span {
+  display: block;
+  text-align: center;
+}
+
+.metrics-container > span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.metrics-container > span + span {
+    color: rgb(158, 157, 157);
+    font-size: 14px;
+}
+
+.promo-button {
+  width: 80%;
+  margin-left: 20px;
+  font-size: 14px;
+  background-color: rgb(243, 243, 243);
+}
+
+.calendar {
+  border: 1px solid lightgray;
+  margin: auto;
+  margin-top: 12px;
+  background-color: white;
+}
+
+.events > p > i {
+  padding: 0px 8px;
+}
+
+.events > p {
+    color: rgb(119, 117, 117)
+}
+
+.events >  p  > span {
+    color: rgb(11, 11, 134);
+    font-weight: bold;
+}
+
+.events > p > i {
+    padding: 0px 8px;
+    color: wheat;
+  }
+
+
+.reminders > p > i {
+  padding: 0px 8px;
+  color: rgb(230, 91, 26);
+}
+
+.reminders > p {
+    color: rgb(119, 117, 117)
+}
+
+.reminders >  p > span {
+    color: rgb(11, 11, 134);
+    font-weight: bold;
+}
+
+.your-pages > div > h2 {
+    font-size:16px;
+    padding-left: 8px;
+    color: rgb(78, 78, 78);
+    border-bottom: 1px solid lightgrey;
+}
+
+.pages-container {
+    border-bottom: 1px solid lightgrey;
+}
+
+.notif-bg {
+    font-size: 12px;
+    border: 1px solid grey;
+    padding: 3px;
+}
+
+.promo-button > i {
+    padding-right: 8px;
+}
+
+.your-pgs ul li img {
+    display: inline;
+}
+
+.transform {
+    display: inline-block;
+    transform: translate(10px, -25px);
+}
+
+.border-span {
+    border: 2px solid lightgrey;
+    background-color: white;
+    margin-left: 3px;
+}
+
+.bottom-right-section {
+    margin-top: 25px;
+    padding: 0 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.bottom-right-section > img {
+    display: inline-block;
+    width: 49%;
+    height: 100px;
+}
+

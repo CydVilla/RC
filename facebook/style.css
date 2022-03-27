@@ -57,8 +57,138 @@
 
   /* From Andrei Neagoie: ZTM web dev 0 to mastery */
 
+
+  .content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .front-page {
+    background-color: rgb(243, 241, 241);
+  }
+
 .front-page > section {
     height: 100%;
     width: 50%;
     float: left;
+}
+
+h1 {
+  float: left;
+  width: 50%;
+  color: white;
+  font-size: 30px;
+  padding-left: 10%;
+  padding-top: 4px;
+}
+
+header {
+  background-color: rgb(4, 94, 211);
+  height: 60px;
+}
+
+header > section {
+  float: left;
+  width: 50%;
+}
+
+header > section > form {
+  padding: 8px;
+  position: relative;
+}
+
+header > section > form button {
+  margin-left: 8px;
+  background-color: rgb(4, 92, 224);
+  color: white;
+}
+
+header > section > form > div {
+  position: relative;
+  display: inline;
+}
+
+header > section > form > div > a {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.fp-left-side {
+  padding: 40px 20px 20px 10%;
+}
+
+.fp-left-side h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 130px 0 0;
+}
+
+.fp-left-side ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fp-left-side ul li {
+  padding: 16px 0
+}
+
+.fp-left-side > ul > li > p {
+  display: inline;
+  margin-left: 8px;
+}
+
+.fp-left-side > ul > li > p > span {
+  font-weight: bold;
+}
+
+.fa-solid {
+  font-size: 32px;
+  color: lightgray;
+  transform: translate(0px, 7px);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.i-width-50 {
+  width: 49%;
+  margin-bottom: 8px;
+}
+
+.i-width-100 {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.i-width-33 {
+  width: 32%;
+  margin: 8px 0;
+}
+
+.sign-up {
+  width: 75%;
+}
+
+.sign-up > p {
+  text-align: left;
+}
+
+.sign-up > p > span {
+  font-weight: bold;
+}
+
+.button {
+  text-align: center;
+  padding: 8px 16px 32px 16px;
+}
+
+.button button {
+  color: white;
+  background-color: rgb(3, 182, 3);
+  padding: 8px 32px;
+  border: none;
 }
