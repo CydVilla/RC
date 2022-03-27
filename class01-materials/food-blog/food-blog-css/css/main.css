@@ -55,14 +55,43 @@
     isolation: isolate;
   }
 
+  /* From Andrei Neagoie: ZTM web dev 0 to mastery */
+
+
   h1 {
-    color: rgb(207, 26, 26);
+    color: rgb(228, 34, 34);
     font-weight: 100;
     font-size: 3rem;
     font-family: Helvetica, sans-serif;
     margin: 40px 0px 8px 0px
   }
 
+  header > span {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+    line-height: 25%;
+  }
+
+  nav {
+    margin: 10px 0;
+    padding: 0px 0px 30px
+  }
+
+  nav > a {
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    padding-bottom: 3px;
+    color: rgb(223, 221, 221);
+  }
+
+  h3 {
+    font-size: 30px;
+    color: rgb(187, 187, 187);
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+  }
   
   p > span {
     float: left;

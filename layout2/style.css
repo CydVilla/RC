@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 200px;
+    border: 1px solid black;
+    clear: both;
+}
+
+section {
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    float: left;
+}
+
+section + section {
+    width: 40%;
+}
+
+/* target third section without a class */
+section + section + section {
+    width: 60%;
+}
