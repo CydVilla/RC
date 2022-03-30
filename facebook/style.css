@@ -26,7 +26,6 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     padding: 0px 48px;
-    max-width: 1440px;
     margin: auto;
   }
   /*
@@ -94,8 +93,9 @@ header > section {
 }
 
 header > section > form {
-  padding: 8px;
+  padding: 14px;
   position: relative;
+  margin-left: 500px;
 }
 
 header > section > form button {
@@ -121,9 +121,10 @@ header > section > form > div > a {
 }
 
 .fp-left-side h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   padding: 0px 130px 0 0;
+  inline-size: 440px;
 }
 
 .fp-left-side ul {
@@ -155,18 +156,21 @@ h2 {
 }
 
 .i-width-50 {
-  width: 49%;
-  margin-bottom: 8px;
+  width: 49.8%;
+  margin: 8px 0;
+  height: 50px;
 }
 
 .i-width-100 {
   width: 100%;
   margin-bottom: 8px;
+  height: 50px;
 }
 
 .i-width-33 {
-  width: 32%;
+  width: 33%;
   margin: 8px 0;
+  height: 50px;
 }
 
 .sign-up {
@@ -175,10 +179,15 @@ h2 {
 
 .sign-up > p {
   text-align: left;
+  margin-right: 10px;
 }
 
 .sign-up > p > span {
   font-weight: bold;
+}
+
+.sign-up > span a{
+  color: blue;
 }
 
 .button {
@@ -189,6 +198,57 @@ h2 {
 .button button {
   color: white;
   background-color: rgb(3, 182, 3);
-  padding: 8px 32px;
+  padding: 8px 50px;
+  font-weight: bold;
   border: none;
+}
+
+.sign-up-section > h2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+form > span {
+  margin-left: 185px;
+}
+
+p > .create-pg-text {
+  margin-left: 200px;
+
+}
+
+form .create-pg-text {
+  text-align: center;
+}
+
+p > .fa-circle-question {
+  display: inline;
+  font-size: 14px;
+  color: grey;
+  padding-left: 4px;
+}
+
+.select-none {
+  appearance: none;
+  
+}
+
+.radio-button-transform1 {
+  transform: translate(285px, -40px);
+  padding: 0;
+  margin: 0;
+}
+.radio-button-transform2 {
+  transform: translate(575px, -40px);
+  padding: 0;
+  margin: 0;
+}
+.radio-button-transform3 {
+  transform: translate(865px, -40px);
+  padding: 0;
+  margin: 0;
+}
+
+select:disabled {
+  color: white;
 }
