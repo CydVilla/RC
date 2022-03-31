@@ -1,0 +1,293 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  font-size: 14px;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body,
+.front-page {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-row {
+  border: 1px solid red;
+  flex: 100%;
+  background-color: rgb(242, 243, 245);
+}
+
+.bg {
+  background-image: url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat;
+  padding: 0px 0px 124px 0px;
+  background-position: 535px 0px;
+}
+nav > ul {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+nav > ul > li {
+  padding: 0 16px;
+  list-style: none;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+nav > ul button {
+  background: black;
+  color: lightgrey;
+  padding: 4px 32px;
+}
+
+.middle-row {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+}
+
+.middle-row2 {
+  border: 1px solid red;
+  display: flex;
+  flex: 100%;
+  background-color: rgb(242, 243, 245);
+}
+
+.middle-row2 > section h2 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  line-height: normal;
+  padding: 16px;
+  margin: auto;
+}
+
+.bottom-middle-row {
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+}
+
+.bmr-bg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2AWHDMxMOvIb8DVpF57pdfTFt70ToYynf2A&usqp=CAU");
+  background-repeat: no-repeat;
+  padding: 0px 0px 16px 0px;
+}
+
+.bottom-middle-row2 > h2 {
+  font-size: 1.2rem;
+}
+
+.bottom-row {
+  border: 1px solid lightgrey;
+  display: inline-flex;
+  flex-direction: column;
+  flex: 100%;
+}
+
+.split {
+  display: flex;
+}
+
+.split-left > h3 {
+  color: gray;
+  padding-bottom: 8px;
+}
+
+.split-left > h3 + p {
+  font-size: 0.9rem;
+}
+
+.split-left {
+  flex: 50%;
+}
+
+.split-right {
+  flex: 50%;
+}
+
+.split-right > h3 + p {
+  font-size: 0.9rem;
+}
+
+.bottom-middle-row > h3 {
+  margin: auto;
+  margin-right: 30px;
+  padding: 0;
+  width: 70%;
+  font-size: 0.9rem;
+}
+
+.bottom-middle-row > h3 + p {
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  margin-right: 30px;
+}
+
+.bottom-middle-row-h2 {
+  font-size: 1.5rem;
+  color: rgb(109, 108, 108);
+  padding-bottom: 8px;
+}
+
+.logo {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/3/35/Simmons_University_Logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
+
+.newsletter {
+  background-color: rgb(184, 197, 208);
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  padding: 8px;
+}
+
+footer {
+  background-color: rgb(143, 156, 163);
+
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+}
+
+h4 {
+  color: white;
+  font-weight: bold;
+}
+
+.top-of-footer {
+  display: flex;
+  justify-content: space-around;
+  flex: 100%;
+}
+
+.copyright {
+  color: white;
+  border-bottom: 1px solid white;
+  display: inline-flex;
+
+}
+
+.footer-ul {
+  display: flex;
+  margin-right: ;
+}
+
+.border-bottom {
+    display: inline-flex;
+    border-bottom: 1px solid white;
+}
+
+.footer-ul ul {
+  display: inline-flex;
+}
+
+.footer-ul ul > li {
+  color: white;
+  font-weight: bold;
+  padding: 0 4px;
+}
+
+.color-white {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.bottom-of-footer {
+  display: inline-flex;
+  justify-content: space-around;
+  flex: 100%;
+}
+
+.links > h4 {
+  display: inline-flex;
+  padding: 0 16px;
+}

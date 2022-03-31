@@ -72,6 +72,27 @@ h6 {
   isolation: isolate;
 }
 
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.left-column {
+  flex: 20%;
+
+}
+
+.middle-column {
+  flex: 40%;
+}
+
+.right-column {
+  flex: 40%
+}
+
 .upper-ul {
   display: inline-flex;
   padding: 0;
@@ -206,13 +227,6 @@ div > .top-text > span {
   font-weight: bold;
 }
 
-.left-column {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-
-}
-
 .left-column > div > h3 {
   margin-left: 32px;
   font-size: .9rem;
@@ -267,5 +281,5 @@ div > .top-text > span {
 .bottom-left > span + h3 + h5 + p {
   line-height: normal;
   margin-left: 32px;
-
 }
+
