@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,111 +19,173 @@
                 <li>Fellows</li>
                 <li>News</li>
                 <li>Contact</li>
-                <li>日本語</li>
-                <li><button>Apply</button></li>
+                <div class="button-container">
+                    <li>日本語</li>
+                    <li><button>Apply</button></li>
+                </div>
             </ul>
         </nav>
     </header>
-    <section class="rows">
     <section class="top-row">
-        <section class="bg">
+
+        <section class="content ">
+            <img class="jwli-image"
+                src="https://www.bu.edu/wgs/files/2015/09/JWLI-intern-job-description-August-2015.bmp">
             <h1>Japanese Women's Leadership Institute</h1>
-            <span>Tell us your email and we will let you know when applications open again!</span>
-            <form>
+            <p>Empowering Japanese women to become leaders and to </p>
+            <p>make positive soical change and innovation in Japan</p>
+            <form class="form-style">
+                <p>Tell us your email and we will let you know when applications open again!</p>
                 <input type="text" id="email" placeholder="email">
                 <input type="submit" value="Submit">
             </form>
         </section>
-    </section>
-
-    <section class="middle-row">
-        <section >
-            <h2>JWLI empowers Japanese women to become leaders and to make positive social change and innovation in Japan.</h2>
-            <section>
-                <section><span>Develop leadership skills</span>and empower current and future generations of women leaders in Japan.</section>
-                <section> <span>Foster more active participation</span> and empowerment of women in Japanese civil society</section>
-                <p>Based in Boston, JWLI was founded in 2006 and offers four weeks of hands-on nonprofit management training with an entrepreneurial aspect.</p>
-            </section>
+        <section class="content2">
+            <img class="intern"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIREhIQEBIPEhASEBAVFxUQFRAVFhETGBUWFxYVHxUYHSogGRolHRMVITEhJSkrLi4uFx8zODUsNygtLisBCgoKDg0OGBAQFy0dFx0rKy0tLS0rLS0tKy0rLS0tLS0tLS0tNy0tLTctKys3Ny0rKzc3LS03KystNy0tKysrK//AABEIAOwA1gMBIgACEQEDEQH/xAAbAAEBAAMBAQEAAAAAAAAAAAAABgQFBwMBAv/EADoQAAIBAQQFCwMCBQUAAAAAAAABAgMEBREhBhIxQXETIkJRUmGBkaGxwTJy0SNiFSQzU4JDc5Ki8P/EABcBAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAbEQEBAQEBAQEBAAAAAAAAAAAAAQIRMRIhQf/aAAwDAQACEQMRAD8A7MADWAAAAAAAAABor10khTxjTwqT6+ivHeDreswLTfNCnlKpFvqjzn6EVbbzq1frm8Oyso+SMMr5T9LOelVFbI1HwS+WfaelNB7VUjxSfsyLBvIz6ro1kvGlV/pzi31bH5MyjmCeGayfcUNzaRyi1Cu3KGxT3x49aMsbNK4GF/GLP/ep+ZkUbRCf0TjL7WmSp6gAAAAAAAAAAAAAAAAAAAAABptJ7y5KnqRfPqYrhHe/gDWaR345N0aTwispSXSfUu4mwC3O0ABrAAAAAAP1CbTxTafWsmfkAUN0aSSi1GtjKHa6UfyitpzUkpRaaaxTW9HMSi0UvTVlyE3zZfTj0ZdXBk2LlVwAJUAAAAAAAAAAAAAAAAHPr8tnK1py6KerHgv/AGJbXvaOTo1J71F4cXkvc50VlOgAFIAAAAAAAAAAAPsZNNNZNPFcT4AOj3ZauVpQqb5Rz4rJ+pkk5oZXxhUp9mSkuD2+q9SjOddYAAAAAAAAAAAAAAAA0WmFXCio9qovJJv8EYVOms/6UfvfsiWLniNegANSAAAAAAAAAAAAAN7ofUwrOPapvzTT/JZkHo1LC00+/WXnFl4RpefAAGKAAAAAAAAAAAAAElpq+fSX7Je5OFFpp/Up/Y/cnS54530ABrAAAAAAAAAAAAABsLgf8xS+/wCGdAOf6Pr+Ypfd8M6ARpeQAGKAAAAAAAAAAAAAElpp/Up/Y/cnCg0zl+rBdVP3k/wT5c8c76AA1gAAAAAAAAAAAAA2ujEcbTT7td/9WXZFaIR/mOFOT9l8lqRpefAAGKAAAAAAAAAAAAAETpbPG0NdmEF8/JpTNvmtr16st2u14LL4MIuOdAAawAAAAAAAAAAAAAbzQ9/rv/bl7xLQhNGKuraIfu1o+aeBdkadM+AAMaAAAAAAAAAAAY94Wnkqc6nZi8OO71wMgldL7wxwoRex4z47l8iMtTTZ8AOjmAAAAAAAAAAAAAAAA9LNWcJxmtsZJ+TOlUqiklJZqSTXBnMSt0SvJOPISfOjnHvjvXgTpWaowASsAAAAAAAADYAE7euksYpxo86ezWawUfB7WSc5Nttttt4tveyyvnR+NXGdPCFTf2Zfh95JWux1KT1akXF9+x8HvKnEXrwABSQAAAAAAAAAAAAAAAA/VOo4tSi2pJ4prcz8mXYbtq1n+nFtdp5RXiGqe6NI41MIVebUyWPRk/hm+NRc9xQoc6XPqde6PBfJtznVwAAaAAAAAAAAH5q04yWrJKSe5pNH6AGmtWjVCecdam/2vLyZrK2iU+hUg/uTXtiVh8lJLN4Jd5vazkRE9GrQtkYPhJfJ5SuC0L/T9Y/kp7Tf9NPUp41ajeCUNmP3Gwsym1jV1dZ9GOyPdjv4m9rORzUGTeNm5KrOn2ZPDhtXoYxSQABgAABuI6NWh54Qz/cjX2Cz8rUhTXSkl4b/AEOi1MUuak2tzeGPdiTaqTqQp6K1ntlTXjJ/BmUdEl06rf2xw9zcWW9qU24N6lRPBwqZNP2ZnGdquRrLLcNnp7Iaz658702GzSwyWS7gDGgAAAAAAAAAAAHyUkli2klvexAfTzr1owWtOSjHrbwNDemk8Y4xoJTl2n9K4dZMWq1zqvWqScn37FwW42RN0pbw0pisVRjrPtSyXltZP2m3Vq7SlKUm3lFbMeCMMrtFbq1Uq81zpLmp9FdfFlfkZ+1mXDc6oR1pYOrJZvsrso2wBC0nplZcJQqrZJar4rZ6exNl/f8AZeVoTS+qK1lxWftiQBcRr0ABqQAAUWhtlxnOq9kFqri9vp7lca3R2y8nQgn9Uuc/HZ6YGyIrpPGpv651XjrRwVWKyfaXUyZsl8V6D1cW1F4OFTPDu60XhPaU3TrxdeC58VzkulHr4oSss/r3u/SSlUwU/wBOX7vpf+X5N0njms13HLzOu+9atH6Jc3syzi/Dd4G3JNOhA1F16QU62EZfp1OqWx8GbclQAAAAAAH4r1lCMpyeEYptgeN4W6FCOvN8Etsn1Iib1vipXeDerDdBbPHrZ5Xpb5V5uctmyK7K6jDLkRaAA1LYXFYeWqxi/pXOlwW7xOgJEvopXpU4SlOcIzlLY3nqrZ7s3n8Vof3afmiKvLMB8hNSSaaaaxTWxo+mKDnV62Xkqs4blLL7XmjopLaZ2XOFVb+a/dfJsTpMAAtAZV2WblasKfakseCzfojFKXQyy4ynVfRWquLzfp7mVsVaQAIdAM+SkksXklve4x/4jR/u0v8AlECKv+wcjVaX0S50eG9eBrSr0rqUqlOMozhKcJbFJN4PJ/BKFxzoby59IZ0sIVMZ0+vpR/K7jRgHXTKFaM4qcGpRayaPQhtHr1dGerJ/pTef7X2i5Js4uXoADGhN6ZWzCMKK6XOlwWxefsUhA6Q2jlLRUe6L1V/jl74mxmvGtABbmAAAfYrHJbXkfDIsFWMKkJTTcYyTeHcGuhWKhydOEOzGK8cMz2PKy2mFSKnCSlF9W7u7mepzdAwb7svK0Zx34Yris0ZwA5eDOvqy8lWnDdjiuDzRgnRzDoFw2XkqEI72tZ8Xn+CLumy8rWhDc5Yv7VmzohOlZAASp5WqjrwnB9KMl5o5rOODae1Np8UdLr14wi5TajFb2c9vOrCdWpOnjqSk2scuJWU6YoAKQAAAXOjFt5Sik3zqfNfDc/L2IY3uiFo1azhunF+azXpiZVT1ZgAhb8V6mrGUn0Yt+SOZzli23tbb8y+0iq6tnqPrSj5tIgCso0AApIAAAAAybDbZ0Za1OWD3rc+5osbov2nWwjLCFTqeyXB/BChGWNl46gCQujSSUMIVsZQ3S6UePWisoVozipQalF70RYuXqb0zsuUKq+1+6+SWOi3tZeVozhvcW19yzRzoqJ0p9DLLnOq/sXu/gqTCuWy8lRhDfhi+LzZlVq0YJym1GK2tmVU8fs1d7X3ToZfXU7K3cXuNLe+kspYwoYxj2+k+HUTzZsjLplXheFStLWqPglsjwRiAFJAAGAAAGVdlbUq059U4+WOD9zFAa6gDxsVXXpwl2oRfoDm6NRpjUwoxj2qi9E2RhVaavKkt2M37fklS54jXoADUgAAAAAAABl3deNShLGDy3xeyXgYgDV9dN9U6+X01N8X8PeT9S6/53k8OY5cp/jtfrkaKMmnisU1vW42sr3q6iniuUzp6+HO1NuGPyTxveqe9r6p0MvqqdlbuL3EdeN41K7xm8t0Vsj4GI3jm82+s+GyMt6AA1gAAAAAAAAAAL3RuprWen3Jx8m0fTF0Pf6D7qkvZA510nj//2Q==">
         </section>
     </section>
+
+    <div class="mid-h2">
+        <h2>JWLI empowers Japanese women to become leaders and to make positive social change and innovation in
+            Japan.</h2>
+        </div>
+
+    <section class="middle-row">
+
+       
+            <section class="first-half">
+                <p><span>Develop leadership skills</span> and empower current and future generations of women leaders
+                in Japan.</p>
+            </section>
+            <section class="second-half"> 
+                <p><span>Foster more active participation</span> and empowerment of women in Japanese civil society
+            </section>
+    
+    </section>
+    <p>Based in Boston, JWLI was founded in 2006 and offers four weeks of hands-on nonprofit management training
+        with an entrepreneurial aspect.</p>
 
     <section class="middle-row2">
         <section>
             <h2>Our History</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam dolore nulla modi quisquam? Nulla corporis non eaque atque eum sequi optio sit asperiores fuga alias! Enim, harum? Officia, quis voluptatibus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae minus, sit praesentium laudantium corporis possimus! Qui, porro alias, autem mollitia laudantium veniam maiores, accusantium maxime consequuntur ipsum nemo tempore.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a autem nam itaque, voluptatum pariatur omnis harum laborum eum sunt, dolorum sapiente corrupti dolor dignissimos quod voluptas natus accusamus labore?</p>
+            <p class="padding-bottom-4px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam dolore nulla modi quisquam? Nulla
+                corporis non eaque atque eum sequi optio sit asperiores fuga alias! Enim, harum? Officia, quis
+                voluptatibus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae minus, sit praesentium
+                laudantium corporis possimus! Qui, porro alias, autem mollitia laudantium veniam maiores, accusantium
+                maxime consequuntur ipsum nemo tempore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae minus, sit praesentium
+                laudantium corporis possimus! Qui, porro alias, autem mollitia laudantium veniam maiores, accusantium
+                maxime consequuntur ipsum nemo tempore.
+            </p>
+            <p class="padding-bottom-4px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae minus, sit praesentium
+                laudantium corporis possimus! Qui, porro alias, autem mollitia laudantium veniam maiores, accusantium
+                maxime consequuntur ipsum nemo tempore.</p>
+            <p class="padding-bottom-54px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a autem nam itaque, voluptatum
+                pariatur omnis harum laborum eum sunt, dolorum sapiente corrupti dolor dignissimos quod voluptas natus
+                accusamus labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a autem nam itaque, voluptatum
+                pariatur omnis harum laborum eum sunt, dolorum sapiente corrupti dolor dignissimos quod voluptas natus
+                accusamus labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a autem nam itaque, voluptatum
+                pariatur omnis harum laborum eum sunt, dolorum sapiente corrupti dolor dignissimos quod voluptas natus
+                accusamus labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a autem nam itaque, voluptatum
+                pariatur omnis harum laborum eum sunt, dolorum sapiente corrupti dolor dignissimos quod voluptas natus
+                accusamus labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a autem nam itaque, voluptatum
+                pariatur omnis harum laborum eum sunt, dolorum sapiente corrupti dolor dignissimos quod voluptas natus
+                accusamus labore?</p>
         </section>
-        <section>
-            <section class="mr2-bg"></section>
-            <section class="mr2-bg2"></section>
-        </section>
-      
+       <section class="image-column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROBy2bWv5bouCfng0o8O4h-ZV-3bTuD-vGjQ&usqp=CAU">
+            <span class="color-grey">Photo Caption</span>
+            <img  src="https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Pikachu_artwork_for_Pok%C3%A9mon_Red_and_Blue.webp/220px-Pikachu_artwork_for_Pok%C3%A9mon_Red_and_Blue.webp.png">
+            <span class="color-grey">Photo Caption</span>
+    </section>
+    
     </section>
 
-    <h2 class="bottom-middle-row-h2">Who We Are</h2>
-    <section class="bottom-middle-row bmr-bg">
-        <h3>Atsuko Toko Fish - Founder</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima corrupti dicta? 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima corrupti dicta?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima corrupti dicta?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima corrupti dicta?
-        </p>
-        <div>
+
+    <div class="h2-row">
+        <h2>Who We Are</h2>
+    </div>
+
+    <section class="bottom-middle-row">
+        <div class="atsuko">
+            <img class="founder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2AWHDMxMOvIb8DVpF57pdfTFt70ToYynf2A&usqp=CAU" alt="important founding person">
+            <div class="origin">
+                <h3>Atsuko Toko Fish - Founder</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum
+                    inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima
+                    corrupti dicta?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum
+                    inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima
+                    corrupti dicta?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum
+                    inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima
+                    corrupti dicta?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat hic nisi sint deleniti, nihil dolorum
+                    inventore soluta quia temporibus accusantium modi quisquam cum quae delectus corporis voluptate minima
+                </p>
+            </div>
+          
 
         </div>
     </section>
 
     <section class="bottom-row">
-        <section class="split">
+
             <section class="split-left">
-                <h3>FISH FAMILY FOUNDATION</h3>
+                <h3 class="fish-fam-foundation">FISH FAMILY FOUNDATION</h3>
+                <div class="fish-fam">
                 <p>The Fich Family Enundation (the Enundatian is a private fam
                     fundation in Rocton The Enundation was actahlishen in 1000 fr
                     formalize the family's tradition of resnonsihility to improve its
                     community and to share the iov of giving with future generations. The
-                    Foundation currently focuses on aiding immigration. at-risk vouth, and people struggling with mental health</p>
+                    Foundation currently focuses on aiding immigration. at-risk vouth, and people struggling with mental
+                    health</p>
+                </div>
+                
             </section>
             <section class="split-right">
-                <h3 class="logo"></h3>
-                <p>In 2007 the second year of IWlI the Canter for Gondor ir
-                    Organizations (CGO) at the Simmons School of Manage
-                    ment in Boston hecame WI 's institutional and academic nartner CGO was
-                    selected because of their unique eynertise in the areas pertaining to
-                    gender and leadershin. its program located in the first business school
-                    in the world designed snecifically for women, and expertise in the area
-                    afmannunfitmanaraman.</p>
+                <h3 class="logo"> <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Simmons_University_Logo.png"></h3>
+                <div class="simmons">   
+                    <p>In 2007 the second year of IWlI the Canter for Gondor ir
+                        Organizations (CGO) at the Simmons School of Manage
+                        ment in Boston hecame WI 's institutional and academic nartner CGO was
+                        selected because of their unique eynertise in the areas pertaining to
+                        gender and leadershin. its program located in the first business school
+                        in the world designed snecifically for women, and expertise in the area
+                        afmannunfitmanaraman.</p>
+                </div>
+               
             </section>
+    </section>
 
-        </section>
-    </section>
+
     <section class="newsletter">
-        <span>Sign Up For Our Newsletter</span>
-        <section>
-            <span>
-                <form>
-                    <input type="text" id="email" placeholder="email">
-                    <input type="submit" value="Submit">
-                </form>
-            </span>
-        </section>
+        <div class="newsletter-container">
+            <span>Sign Up For Our Newsletter</span>
+                <form class="sign-up">
+                        <input type="text" id="email2" placeholder="email">
+                        <input type="submit"  value="Submit">
+                    </form>
+        </div>
+        
     </section>
-  
-    
+
+
 
     <footer>
         <section class="top-of-footer">
-        <section class="copyright">
-            Copyright  2016 Japanese Woman's Leadership intiative
-        <section class="footer-ul">
-            <ul>
-                <li><a>YouTube</a></li>
-                <li><a>Facebook</a></li>
-                <li><a>Newsletter</a></li>
-            </ul>
+            <section class="copyright">
+                Copyright 2016 Japanese Woman's Leadership intiative
+                <section class="footer-ul">
+                    <ul>
+                        <li><a>YouTube</a></li>
+                        <li><a>Facebook</a></li>
+                        <li><a>Newsletter</a></li>
+                    </ul>
+                </section>
+            </section>
         </section>
-        </section>
-    </section>
 
 
         <section class="bottom-of-footer">
@@ -147,14 +211,15 @@
                 <li>Fund</li>
             </ul>
             <section class="links">
-            <h4>Fellows</h4>
-            <h4>News</h4>
-            <h4>Contact</h4>
-            <h4>日本語</h4>
+                <h4>Fellows</h4>
+                <h4>News</h4>
+                <h4>Contact</h4>
+                <h4>日本語</h4>
             </section>
         </section>
     </footer>
-</section>
+    </section>
 
 </body>
+
 </html>
