@@ -1,0 +1,298 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  font-size: 14px;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body,
+.front-page {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(102, 118, 138);
+}
+
+header > ul {
+  display: inline-flex;
+  padding-top: 16px;
+}
+
+header > ul > li {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px;
+  color: rgb(102, 118, 138);
+  font-weight: bold;
+}
+.top-section {
+  background-color: rgb(102, 118, 138);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-bottom: 32px;
+}
+
+h1 + p {
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  font-weight: bold;
+}
+.fa-circle-play {
+  color: white;
+  font-size: 1.5rem;
+  mix-blend-mode: normal;
+  padding: 64px 0;
+  padding-right: 8px;
+}
+
+.span-container {
+  text-align: center;
+}
+
+.span-container > span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+img {
+  width: 3%;
+  margin: auto;
+}
+
+.middle-row {
+  text-align: center;
+  padding: 80px;
+}
+
+.middle-row > h2 {
+  font-size: 32px;
+}
+
+.middle-row > p {
+  width: 50%;
+  margin: auto;
+}
+
+.third-row {
+  text-align: center;
+  padding: 80px;
+}
+
+.third-row > h2 {
+  font-size: 24px;
+}
+
+.third-row > h2 + p {
+  width: 40%;
+  line-height: 1.5;
+  margin: auto;
+  padding: 16px;
+}
+.third-row > h2 + p + button {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 10px 28px;
+  color: black;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  text-align: center;
+  background-color: rgb(218, 223, 226);
+  padding: 80px;
+}
+
+.flex-container > section > img + h3 {
+  padding-top: 16px;
+}
+
+.flex-container > section > img + h3 + p {
+  color: black;
+  margin: auto;
+  width: 90%;
+  padding: 18px;
+}
+
+.pikapika {
+  width: 30%;
+}
+
+.left {
+  padding-left: 20%;
+}
+
+.right {
+  padding-right: 20%;
+}
+section > .pikapika + h3 + p + button {
+  background-color: rgb(218, 223, 226);
+  border: 1px solid gray;
+  color: black;
+  width: 50%;
+}
+
+.d-flex {
+  display: flex;
+  padding: 0;
+  /* color: white; */
+}
+
+.d-flex li {
+  padding: 8px;
+}
+
+.logo-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+
+footer {
+  padding: 24px;
+  background: rgb(23, 31, 42);
+}
+
+#site-map {
+  padding-left: 8px;
+  color: rgb(89, 105, 122);
+  font-size: .8rem;
+
+}
+
+#contribute {
+  padding-left: 8px;
+  color: rgb(89, 105, 122);
+  font-size: .8rem;
+
+}
+
+#p-tag {
+  color: white;
+}
+
+#footer-img {
+  width: 32px;
+}
+
+#justify {
+  justify-content: space-between;
+}
+
+.color-white {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.color-icon {
+  color: white;
+  font-size: 1rem;
+}
+
+.grey {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    * {
+        font-size: .8rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}

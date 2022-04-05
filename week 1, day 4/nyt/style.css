@@ -74,9 +74,7 @@ h6 {
 
 .columns {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
-  width: 100%;
 }
 
 
@@ -87,10 +85,12 @@ h6 {
 
 .middle-column {
   flex: 40%;
+  border-right: 1px solid lightgray;
 }
 
 .right-column {
-  flex: 40%
+  flex: 30%;
+
 }
 
 .upper-ul {
@@ -233,6 +233,7 @@ div > .top-text > span {
   border-bottom: 1px solid grey;
   width: 52%;
   margin-bottom: 8px;
+  margin-top: 12px;
 }
 
 .left-column > div > h2 {
@@ -241,6 +242,12 @@ div > .top-text > span {
   margin-left: 32px;
   font-size: 2rem;
 }
+
+.left-column > div > h5 {
+  padding-bottom: 8px;
+}
+
+
 
 .author-text {
   font-size: .8rem;
@@ -283,3 +290,238 @@ div > .top-text > span {
   margin-left: 32px;
 }
 
+.middle-column > section > video {
+  margin: auto;
+  margin-top: 12px;
+  width: 80%;
+}
+
+.middle-column > section > video + h4 {
+  font-size: .7rem;
+  text-align: center;
+}
+
+.light-grey + p {
+  text-align: left;
+  margin-left: 18px;
+  margin-right: 75px;
+}
+
+.top-ten-sect > h3  {
+  text-align: left;
+  margin-left: 18px;
+  font-size: 1.4rem;
+  padding-top: 16px;
+}
+
+.top-ten-sect > h3 + p {
+  text-align: left;
+  margin-left: 18px;
+}
+
+.top-ten-sect > h3 + p + ul {
+  display: inline-flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+.text-black {
+  font-weight: bold;
+  font-size: .9rem;
+
+}
+
+.list-style-none {
+  list-style: none;
+
+}
+
+.top-ten-sect > h3 + p + ul > li{
+  list-style: none;
+  padding: 0px 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: .9rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.bottom-ten-sect {
+  display: inline-flex;
+}
+
+.bottom-ten-sect > img {
+  width: 15%;
+  padding-right: 8px;
+}
+
+.h4-text {
+  margin-left: 18px;
+}
+
+.h4-text > h4 + h5 {
+  margin: 0;
+}
+
+
+.bottom-ten-sect > p {
+  font-size: .9rem;
+  margin-left: 18px;
+}
+
+
+.bottom-ten-sect-btm > h4 > li {
+  padding: 0;
+  font-size: .9rem;
+  padding-bottom: 8px;
+}
+
+.bottom-ten-sect-btm > h4 + h4 + h5 {
+  margin: 0;
+}
+
+.right-column > h2 {
+  text-align: center;
+  padding: 16px
+}
+
+
+.right-column > section > h3 {
+  text-align: center;
+}
+
+.cat-img {
+  /* background-image: url("https://placekitten.com/100/100"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* width: 15%; */
+  /* background-position: 100%; */
+}
+
+
+.right-column-content {
+  display: flex;
+}
+
+.right-column-content2 {
+  display: flex;
+}
+
+
+.ul-container {
+  padding: 0;
+}
+.ul-container2 {
+  padding: 4px 4px;
+  width: 50%;
+  border: 1px solid lightgrey;
+}
+
+.author-text2 {
+  font-size: .8rem;
+  text-align: left;
+  color: grey;
+  line-height: normal;
+  padding-bottom: 2px;
+}
+
+.ul-container > .opinion-pages > li {
+  display: flex;
+  justify-content: space-around;
+}
+
+.border-right {
+  border-right: 1px solid lightgray;
+
+}
+
+.padding-bottom {
+  padding-bottom: 12px;
+}
+
+.line-height-normal {
+  line-height: normal;
+  padding-bottom: 8px;
+}
+
+
+.text-bold {
+  font-weight: bold;
+  font-size: .9rem;
+  padding-top: 8px;
+
+}
+
+.align-column {
+  align-items: flex-start;
+}
+
+.opinion-pages {
+  padding: 0;
+}
+
+.opinion-pages > li > section  > img {
+  height: 60px;
+}
+
+.split {
+  width: 50%;
+}
+
+.split2 {
+  padding-bottom: 8px
+}
+
+.chess-image {
+  background-image: url("https://static.thenounproject.com/png/461002-200.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.top-half {
+  border-bottom: 1px solid lightgray;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.top-half > p {
+  margin: auto;
+  padding: 0px 40px;
+}
+
+.top-half > p + section > img {
+  padding: 16px 0px;
+    padding-right: 15px;
+}
+
+#ul-padding {
+  padding-bottom: 32px;
+}
+
+#border-none {
+  border: 0;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+}
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    * {
+      font-size: 16px;
+    }
+    
+}
