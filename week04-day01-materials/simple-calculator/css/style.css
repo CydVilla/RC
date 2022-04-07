@@ -12,7 +12,13 @@
 /*******************************************/
 h1, h2{
   text-align: center;
+  color: rgb(122, 11, 226)
 }
+
+h2 {
+  margin-top: 50px;
+}
+
 img{
   display: block;
   height: 300px;
@@ -20,19 +26,35 @@ img{
 }
 ul{
   width: 100px;
-  height: 200px;
-  border: 3px solid black;
+  border: 5px solid black;
   margin: 0 auto;
   list-style: none;
   padding: 0;
+  color: rgb(122, 11, 226);
+  font-weight: bold;
 }
 li{
   text-align: center;
   width: 94px;
-  height: 49px;
+  height: 75px;
   border: 1px solid black;
 }
+
+#pumpkin {
+  color: rgb(93, 4, 4);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+body {
+  background-image: url("https://c.tenor.com/pEMrIYO4dKgAAAAC/is-this-a-pigeon-meme.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
