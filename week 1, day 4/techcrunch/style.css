@@ -75,7 +75,6 @@ h6 {
 header {
   width: 100%;
   flex-wrap: wrap;
-
 }
 
 .fa-brands,
@@ -142,11 +141,10 @@ button {
 .logo-links {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .margin-right {
-  margin-left: 150px
+  margin-left: 150px;
 }
 
 ::placeholder {
@@ -180,21 +178,18 @@ input {
 }
 
 .left-section-left {
-    border-bottom: 18px solid rgb(213, 213, 213);
-    width: 45%;
-
+  border-bottom: 18px solid rgb(213, 213, 213);
+  width: 45%;
 }
-
 
 h1 {
   font-size: 1.5rem;
   margin-left: 34px;
   padding: 4px 0;
-  
 }
 
 section > h1 > span {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -211,7 +206,7 @@ h4 {
 }
 
 .left-section > section > section > h1 + img + p {
-      margin-left: 34px;
+  margin-left: 34px;
 }
 
 .left-section-right {
@@ -221,12 +216,11 @@ h4 {
   padding-bottom: 48px;
   border-bottom: 18px solid rgb(213, 213, 213);
   flex-wrap: wrap;
-
 }
 
 .left-section-right > h2 {
-    font-size: 1.5rem;
-    padding: 8px;
+  font-size: 1.5rem;
+  padding: 8px;
 }
 
 .d-flex-inline {
@@ -309,8 +303,7 @@ section > input + button {
 
 a {
   text-decoration: none;
-  color: rgb(98,102,99);
-
+  color: rgb(98, 102, 99);
 }
 
 #see-all {
@@ -319,330 +312,147 @@ a {
 }
 
 .extra {
-    flex-wrap: wrap;
-    flex-direction: row;
-    border: 1px solid red;
-}
-
-@media only screen 
-and (device-width : 375px) 
-and (device-height : 667px) 
-and (-webkit-device-pixel-ratio : 2) {
- 
-
-header {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid red;
 }
+
+@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    display: flex;
+  }
 
   .tc-background {
-    background-size: 200px;
+    background-size: 150px;
+    width: 100%;
   }
 
   .d-flex {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+  }
 
+  .right-header > .d-flex {
+    margin-left: 150px;
   }
   .logo-links {
-    display: block;
+    display: inline;
   }
 
-  /* .d-flex-inline {
-    display: inline-flex;
+  .margin-auto {
+    margin: 0;
   }
-   */
-  
+
   .right-header {
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    width: 100%;
+    display: inline;
+    flex: none;
   }
 
   .left-section {
-    display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
   }
 
   .left-section-left {
-    margin: auto;
     width: 100%;
   }
 
   .left-section-right {
     width: 100%;
-    margin: auto;
   }
 
   .right-section {
     width: 100%;
-    margin: auto;
+  }
+  #email-sign-up {
+    padding: 8px;
+    display: inline-flex;
+    margin: 0;
+    justify-content: center;
+  }
+  button {
+    font-size: 0.8rem;
+    padding-right: 8px;
+    margin-right: 4px;
+  }
+
+  .d-flex li {
+    padding: 0;
+    padding-left: 1px;
+  }
+  input {
+    font-size: 0.8rem;
   }
 }
 
-
-@media only screen 
-and (device-width : 414px) 
-and (device-height : 896px) 
-and (-webkit-device-pixel-ratio : 2) {
- 
-
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  header {
+    display: flex;
+  }
 
   .tc-background {
-    background-size: 200px;
+    background-size: 150px;
+    width: 100%;
   }
 
   .d-flex {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+  }
 
+  .right-header > .d-flex {
+    margin-left: 150px;
   }
   .logo-links {
-    display: block;
+    display: inline;
   }
 
-  /* .d-flex-inline {
-    display: inline-flex;
+  .margin-auto {
+    margin: 0;
   }
-   */
-  
+
   .right-header {
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    width: 100%;
+    display: inline;
+    flex: none;
   }
 
   .left-section {
-    display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
   }
 
   .left-section-left {
-    margin: auto;
     width: 100%;
   }
 
   .left-section-right {
     width: 100%;
-    margin: auto;
   }
 
   .right-section {
     width: 100%;
-    margin: auto;
   }
-}
-@media only screen 
-and (device-width : 375px) 
-and (device-height : 671px) 
-and (-webkit-device-pixel-ratio : 2) {
- 
-
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-  .tc-background {
-    background-size: 200px;
-  }
-
-  .d-flex {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  }
-  .logo-links {
-    display: block;
-  }
-
-  /* .d-flex-inline {
+  #email-sign-up {
+    padding: 8px;
     display: inline-flex;
+    margin: 0;
+    justify-content: center;
   }
-   */
-  
-  .right-header {
-    flex-direction: row;
-    flex-wrap: wrap;
-
+  button {
+    font-size: 0.8rem;
+    padding-right: 8px;
+    margin-right: 4px;
   }
 
-  .left-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .d-flex li {
     padding: 0;
+    padding-left: 1px;
   }
-
-  .left-section-left {
-    margin: auto;
-    width: 100%;
+  input {
+    font-size: 0.8rem;
   }
-
-  .left-section-right {
-    width: 100%;
-    margin: auto;
-  }
-
-  .right-section {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
-
-@media screen 
-  and (min-device-width: 200px) 
-  and (max-device-width: 1800px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    @media (max-width: 800px) {
-
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .left-section {
-        flex: 100%;
-      }
-      .left-section-right {
-        flex: 50%;
-      }
-
-    header {
-      display: inline-flex;
-      width: 100%;
-    }
-
-    .logo-links {
-      flex: 100%;
-    }
-
-    .tc-background {
-      background-size: contain;
-    }
-
-    .margin-right {
-      margin: 0;
-    }
-
-    .left-ul, ul.d-flex {
-      justify-content: end;
-      margin-right: 12px;
-    }
-
-
-
-    .d-flex  {
-      margin: 0;
-      padding: 0;
-    }
-
-    }
-}
-
-@media screen 
-  and (min-device-width: 200px) 
-  and (max-device-width: 1800px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    @media (max-width: 800px) {
-
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .left-section {
-        flex: 100%;
-      }
-
-      .right-section {
-        flex: 100%;
-      }
-
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-
-    .right-header {
-      flex-direction: column;
-
-    }
-
-    .tc-background {
-      background-size: 45px;
-    }
-
-    .left-ul, ul.d-flex {
-      font-size: .8rem;
-    }
-
-    section > h1 > span {
-      font-size: 1.4rem;
-  }
-
-    #email-sign-up {
-      padding: 8px;
-      display: inline-flex;
-      width: 100%;
-      justify-content: center;
-  }
-    .d-flex  {
-      margin: 0;
-      padding: 0;
-    }
-
-    .d-flex li {
-      padding: 1px;
-    }
-
-    button, .fa-facebook-messenger {
-      padding: 0;
-      margin: 0;
-      font-size: .8rem;
-    }
-
-    li {
-      font-size: .8rem;
-
-    }
-
-    .search {
-      font-size: .5rem;
-    }
-
-    }
 }

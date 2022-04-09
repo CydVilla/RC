@@ -242,15 +242,13 @@ footer {
 #site-map {
   padding-left: 8px;
   color: rgb(89, 105, 122);
-  font-size: .8rem;
-
+  font-size: 0.8rem;
 }
 
 #contribute {
   padding-left: 8px;
   color: rgb(89, 105, 122);
-  font-size: .8rem;
-
+  font-size: 0.8rem;
 }
 
 #p-tag {
@@ -280,19 +278,198 @@ footer {
   font-size: 0.8rem;
 }
 
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  * {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
 
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 896px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    * {
-        font-size: .8rem;
-    }
+  .third-row > h2 + p {
+    width: 100%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 16px;
+  }
+  .third-row > h2 + p + button {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .middle-row {
+    padding: 0;
+  }
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-container > section > img + h3 + p {
+    color: black;
+    width: 100%;
+    line-height: normal;
+  }
+  button {
+    font-size: 0.7rem;
+    line-height: normal;
+  }
+  .left {
+    padding: 0;
+  }
+
+  .right {
+    padding: 0;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  * {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .third-row > h2 + p {
+    width: 100%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 16px;
+  }
+  .third-row > h2 + p + button {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .middle-row {
+    padding: 0;
+  }
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-container > section > img + h3 + p {
+    color: black;
+    width: 100%;
+    line-height: normal;
+  }
+  button {
+    font-size: 0.7rem;
+    line-height: normal;
+  }
+  .left {
+    padding: 0;
+  }
+
+  .right {
+    padding: 0;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  * {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .third-row > h2 + p {
+    width: 100%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 16px;
+  }
+  .third-row > h2 + p + button {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .middle-row {
+    padding: 0;
+  }
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-container > section > img + h3 + p {
+    color: black;
+    width: 100%;
+    line-height: normal;
+  }
+  button {
+    font-size: 0.7rem;
+    line-height: normal;
+  }
+  .left {
+    padding: 0;
+  }
+
+  .right {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1080px) and (-webkit-min-device-pixel-ratio:1) {
+  * {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .third-row > h2 + p {
+    width: 100%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 16px;
+  }
+  .third-row > h2 + p + button {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .middle-row {
+    padding: 0;
+  }
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-container > section > img + h3 + p {
+    color: black;
+    width: 100%;
+    line-height: normal;
+  }
+  button {
+    font-size: .7rem;
+    line-height: normal;
+  }
+  .left {
+    padding: 0;
+  }
+
+  .right {
+    padding: 0;
+  }
 }
 
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 }

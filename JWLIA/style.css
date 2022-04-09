@@ -375,27 +375,25 @@ li {
 }
 
 #email2 {
-    padding: 0px 32px;
-    margin-left: 12px;
+  padding: 0px 32px;
+  margin-left: 12px;
 }
 
-
 #email2 + input {
-    background: rgb(143,156,163);
-    padding: 0px 32px;
-    margin-left: 12px;
-
+  background: rgb(143, 156, 163);
+  padding: 0px 32px;
+  margin-left: 12px;
 }
 
 .sign-up {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .newsletter-container {
-    padding: 8px;
-    flex: 100%;
-    display: inline-flex;
-    justify-content: space-evenly;
+  padding: 8px;
+  flex: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
 footer {
@@ -410,15 +408,12 @@ h4 {
   font-weight: bold;
 }
 
-
-
 .copyright {
-    color: white;
-    border-bottom: 1px solid white;
-    display: flex;
-    justify-content: space-around;
-    padding: 12px;
-
+  color: white;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
 }
 
 /* .footer-ul {
@@ -447,7 +442,7 @@ h4 {
 .bottom-of-footer {
   display: inline-flex;
   justify-content: space-around;
-  padding: 16px
+  padding: 16px;
 }
 
 .links > h4 {
@@ -455,8 +450,184 @@ h4 {
   padding: 0 16px;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media screen and (min-width: 414px) and (max-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .second-half > p > span {
+    border-top: 2px solid rgb(255, 221, 240);
+    font-weight: bold;
+    padding-top: 0px;
+  }
+
+  .padding-bottom-4px {
+    line-height: normal;
+  }
+  .padding-bottom-54px {
+    padding: 0;
+    line-height: normal;
+  }
+
+  .origin > h3 + p {
+    font-size: 0.5rem;
+    line-height: normal;
 }
 
-@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-} 
+.fish-fam-foundation {
+  color: rgb(180, 182, 183);
+  padding-top: 0px;
+  font-size: 1.2rem;
+  display: flex;
+}
+nav > ul > li {
+  list-style: none;
+  margin: auto;
+  padding: 2px
+}
+
+.button-container > li + li button {
+  background: black;
+  color: white;
+  padding: 2px 10px;
+}
+
+#email2 + input {
+  background: rgb(143, 156, 163);
+  padding: 0px 16px;
+}
+
+.logo {
+    color: rgb(180, 182, 183);
+    width: 70%;
+    margin-bottom: 5px;
+    filter: grayscale(100%);
+    padding-top: 0px;
+}
+.split-left {
+  width: 45%;
+}
+.split-right {
+  width: 45%;
+}
+}
+@media screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .second-half > p > span {
+    border-top: 2px solid rgb(255, 221, 240);
+    font-weight: bold;
+    padding-top: 0px;
+  }
+
+  .padding-bottom-4px {
+    line-height: normal;
+  }
+  .padding-bottom-54px {
+    padding: 0;
+    line-height: normal;
+  }
+
+  .origin > h3 + p {
+    font-size: 7px;
+    line-height: normal;
+}
+
+.founder {
+  margin-right: 0;
+}
+
+h3 {
+  font-size: 8px;
+}
+
+.fish-fam-foundation {
+  color: rgb(180, 182, 183);
+  padding-top: 0px;
+  font-size: 1.2rem;
+  display: flex;
+}
+nav > ul > li {
+  list-style: none;
+  margin: auto;
+  padding: 2px
+}
+
+.button-container > li + li button {
+  background: black;
+  color: white;
+  padding: 0
+}
+
+#email2 + input {
+  background: rgb(143, 156, 163);
+  padding: 0px 6px;
+}
+
+.logo {
+    color: rgb(180, 182, 183);
+    width: 20%;
+    margin-bottom: 5px;
+    filter: grayscale(100%);
+    padding-top: 0px;
+}
+.split-left {
+  width: 45%;
+}
+.split-right {
+  width: 45%;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 1080px) and (-webkit-min-device-pixel-ratio: 1) {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .second-half > p > span {
+    border-top: 3px solid rgb(255, 221, 240);
+    font-weight: bold;
+    padding-top: 0px;
+  }
+
+  .padding-bottom-4px {
+    line-height: normal;
+  }
+  .padding-bottom-54px {
+    padding: 0;
+    line-height: normal;
+  }
+
+  .origin > h3 + p {
+    font-size: 0.6rem;
+    line-height: normal;
+}
+
+.fish-fam-foundation {
+  color: rgb(180, 182, 183);
+  padding-top: 0px;
+  font-size: 1.2rem;
+  display: flex;
+}
+nav > ul > li {
+  list-style: none;
+  margin: auto;
+  padding: 2px
+}
+
+.button-container > li + li button {
+  background: black;
+  color: white;
+  padding: 4px 32px;
+}
+}
+

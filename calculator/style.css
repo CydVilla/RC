@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  border: 2px solid black;
+  max-width: 100%;
+}
+
+body {
+    background: linear-gradient(#e66465, #9198e5);}
+
+h1 {
+    border: none;
+    padding: 50px;
+}
+
+h2 {
+    border: none;
+    font-size: 64px;
+    padding: 50px;
+    width: 100%;
+
+}
+
+input {
+    padding: 4px;
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 50px;
+
+}
+
+ul {
+    margin-top: 16px;
+    border: 1px solid black;
+    display: inline-flex;
+
+}
+
+button {
+    background: linear-gradient(#e66465, #9198e5);
+    font-weight: bold;
+    padding: 50px;
+    font-size: 32px;
+
+}
+
+li {
+  list-style: none;
+  padding: 8px;
+  padding: 50px;
+
+}

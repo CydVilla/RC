@@ -15,27 +15,25 @@
 
 <h1>Rock, Paper, or Scissors?</h1>
 
-<p>A bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.</p>
+<p>A bot has challenged you to a game. <span class="bold">Rock</span>beats<span class="bold">scissors,</span><span class="bold">scissors</span>beats<span class="bold">paper,</span> and<span class="bold">paper</span>beats<span class="bold">rock</span>.</p>
 
 <div class="scoreboard">
   <h2>Scoreboard</h2>
-  <table>
-    <tbody>
-      <tr>
-        <td id="humanScore">0</td>
-        <td id="computerScore">0</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th>You</th>
-        <th>Bot</th>
-      </tr>
-    </tfoot>
-  </table>
-</div>
-
-<h2>Choose Wisely</h2>
+  <section id="table">
+    <section>
+      <div>
+        <span id="humanScore">0</span>
+        <span id="computerScore">0</span>
+      </div>
+    </section>
+    <section>
+      <div>
+        <span>You</span>
+        <span>Bot</span>
+      </div>
+    </section>
+  </section>
+  <h2 id="wisely-text">Choose Wisely</h2>
 
 <button id="rock">Rock</button>
 
@@ -45,6 +43,9 @@
 
 
 <div id="status"></div>
+</div>
+
+
 </body>
 
 </html>

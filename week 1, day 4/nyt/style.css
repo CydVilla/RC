@@ -77,10 +77,8 @@ h6 {
   flex-wrap: wrap;
 }
 
-
 .left-column {
   flex: 20%;
-
 }
 
 .middle-column {
@@ -90,7 +88,6 @@ h6 {
 
 .right-column {
   flex: 30%;
-
 }
 
 .upper-ul {
@@ -115,7 +112,6 @@ h6 {
   margin-top: 4px;
   position: relative;
 }
-
 
 button {
   padding: 0;
@@ -219,7 +215,7 @@ div > .top-text > span {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
   padding: 0px 8px;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   /* https://stackoverflow.com/questions/42014934/how-to-create-a-custom-border-with-a-gap */
 }
 
@@ -229,7 +225,7 @@ div > .top-text > span {
 
 .left-column > div > h3 {
   margin-left: 32px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-bottom: 1px solid grey;
   width: 52%;
   margin-bottom: 8px;
@@ -247,10 +243,8 @@ div > .top-text > span {
   padding-bottom: 8px;
 }
 
-
-
 .author-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-left: 32px;
   text-align: left;
   color: grey;
@@ -260,16 +254,16 @@ div > .top-text > span {
 
 .left-column > div > ul > li {
   line-height: normal;
-  padding: 4px 0 12px 0
+  padding: 4px 0 12px 0;
 }
 
 .time-styling {
   color: rgb(153, 1, 1);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .bottom-left > span {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: rgb(77, 76, 76);
   line-height: normal;
   display: flex;
@@ -297,7 +291,7 @@ div > .top-text > span {
 }
 
 .middle-column > section > video + h4 {
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: center;
 }
 
@@ -307,7 +301,7 @@ div > .top-text > span {
   margin-right: 75px;
 }
 
-.top-ten-sect > h3  {
+.top-ten-sect > h3 {
   text-align: left;
   margin-left: 18px;
   font-size: 1.4rem;
@@ -327,21 +321,19 @@ div > .top-text > span {
 
 .text-black {
   font-weight: bold;
-  font-size: .9rem;
-
+  font-size: 0.9rem;
 }
 
 .list-style-none {
   list-style: none;
-
 }
 
-.top-ten-sect > h3 + p + ul > li{
+.top-ten-sect > h3 + p + ul > li {
   list-style: none;
   padding: 0px 8px;
   padding-bottom: 8px;
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -362,16 +354,14 @@ div > .top-text > span {
   margin: 0;
 }
 
-
 .bottom-ten-sect > p {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: 18px;
 }
 
-
 .bottom-ten-sect-btm > h4 > li {
   padding: 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding-bottom: 8px;
 }
 
@@ -381,9 +371,8 @@ div > .top-text > span {
 
 .right-column > h2 {
   text-align: center;
-  padding: 16px
+  padding: 16px;
 }
-
 
 .right-column > section > h3 {
   text-align: center;
@@ -397,7 +386,6 @@ div > .top-text > span {
   /* background-position: 100%; */
 }
 
-
 .right-column-content {
   display: flex;
 }
@@ -405,7 +393,6 @@ div > .top-text > span {
 .right-column-content2 {
   display: flex;
 }
-
 
 .ul-container {
   padding: 0;
@@ -417,7 +404,7 @@ div > .top-text > span {
 }
 
 .author-text2 {
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: left;
   color: grey;
   line-height: normal;
@@ -431,7 +418,6 @@ div > .top-text > span {
 
 .border-right {
   border-right: 1px solid lightgray;
-
 }
 
 .padding-bottom {
@@ -443,12 +429,10 @@ div > .top-text > span {
   padding-bottom: 8px;
 }
 
-
 .text-bold {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding-top: 8px;
-
 }
 
 .align-column {
@@ -459,7 +443,7 @@ div > .top-text > span {
   padding: 0;
 }
 
-.opinion-pages > li > section  > img {
+.opinion-pages > li > section > img {
   height: 60px;
 }
 
@@ -468,7 +452,7 @@ div > .top-text > span {
 }
 
 .split2 {
-  padding-bottom: 8px
+  padding-bottom: 8px;
 }
 
 .chess-image {
@@ -491,7 +475,7 @@ div > .top-text > span {
 
 .top-half > p + section > img {
   padding: 16px 0px;
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 #ul-padding {
@@ -502,26 +486,271 @@ div > .top-text > span {
   border: 0;
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-bar > ul {
+    display: none;
+  }
+
+  .left-column {
+    display: none;
+  }
+  .middle-column {
+    flex: 100%;
+  }
+
+  .NY-header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 4px;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .NY-header ul {
+    font-size: 1rem;
+  }
+
+  .date-ul > ul > li > a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .upper-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .top-ten-sect {
+    text-align: center;
+  }
+
+  .top-ten-sect > h3 + p + ul {
+    padding: 8px;
+}
+  .top-ten-sect > h3 + p + ul > div {
+    padding-bottom: 5px;
+    text-align: center;
 }
 
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  
+
+  li {
+    list-style: none;
+
+  }
+
+  .bottom-ten-sect-btm > h4 > li {
+    padding: 8px;
+    font-size: 0.9rem;
+    padding-bottom: 0px;
+  }
+
+  .bottom-ten-sect-btm > h4 {
+    padding: 0px 8px 0px 8px;
+  }
+  .bottom-ten-sect-btm > h4 + h4 {
+    padding: 8px 8px 0px 16px;
+  }
+
+  .bottom-ten-sect-btm > h4 + h4 + h5 {
+    padding-left: 16px;
+  }
+
+  div > .top.text,
+  div > .top-text > span {
+    display: none;
+  }
+
+  .opinion-pages {
+    font-size: 1rem;
+  }
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-    * {
-      font-size: 16px;
-    }
-    
+@media screen and (max-width: 1080px) and (-webkit-min-device-pixel-ratio:1) {
+  .nav-bar > ul {
+    display: none;
+  }
+
+  .left-column {
+    display: none;
+  }
+  .middle-column {
+    flex: 100%;
+  }
+
+  .NY-header {
+    display: flex;
+    margin: 0;
+    padding: 4px;
+    border-bottom: none;
+  }
+
+  .NY-header ul {
+    font-size: 1rem;
+  }
+
+  .date-ul > ul > li > a {
+    font-size: .6rem;
+    font-weight: bold;
+  }
+
+  .upper-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .top-ten-sect {
+    text-align: center;
+  }
+
+  .top-ten-sect > h3 + p + ul {
+    padding: 8px;
+}
+  .top-ten-sect > h3 + p + ul > div {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+  .top-ten-sect > h3 + p + ul > li,
+  .text-black {
+    font-size: 2rem;
+    padding: 0;
+    padding-left: 8px;
+
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+  .bottom-ten-sect-btm > h4 > li {
+    padding: 8px;
+    font-size: 0.9rem;
+    padding-bottom: 0px;
+  }
+
+  .bottom-ten-sect-btm > h4 {
+    padding: 0px 8px 0px 8px;
+  }
+  .bottom-ten-sect-btm > h4 + h4 {
+    padding: 8px 8px 0px 16px;
+  }
+
+  .bottom-ten-sect-btm > h4 + h4 + h5 {
+    padding-left: 16px;
+  }
+
+  div > .top.text,
+  div > .top-text > span {
+    display: none;
+  }
+
+  div > .top-text {
+    display: none;
+}
+
+  .opinion-pages {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1080px) and (-webkit-min-device-pixel-ratio:1) {
+  .nav-bar > ul {
+    display: none;
+  }
+
+  .left-column {
+    display: none;
+  }
+  .middle-column {
+    flex: 100%;
+  }
+
+  .NY-header {
+    display: flex;
+    margin: 0;
+    padding: 4px;
+    border-bottom: none;
+  }
+
+  .NY-header ul {
+    font-size: 1rem;
+  }
+
+  .date-ul > ul > li > a {
+    font-size: .6rem;
+    font-weight: bold;
+  }
+
+  .upper-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .top-ten-sect {
+    text-align: center;
+  }
+
+  .top-ten-sect > h3 + p + ul {
+    padding: 8px;
+}
+  .top-ten-sect > h3 + p + ul > div {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+  .top-ten-sect > h3 + p + ul > li,
+  .text-black {
+    font-size: 1.1rem;
+    padding: 0;
+    padding-left: 8px;
+
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+  .bottom-ten-sect-btm > h4 > li {
+    padding: 8px;
+    font-size: 0.9rem;
+    padding-bottom: 0px;
+  }
+
+  .bottom-ten-sect-btm > h4 {
+    padding: 0px 8px 0px 8px;
+  }
+  .bottom-ten-sect-btm > h4 + h4 {
+    padding: 8px 8px 0px 16px;
+  }
+
+  .bottom-ten-sect-btm > h4 + h4 + h5 {
+    padding-left: 16px;
+  }
+
+  div > .top.text,
+  div > .top-text > span {
+    display: none;
+  }
+
+  div > .top-text {
+    display: none;
+}
+
+  .opinion-pages {
+    font-size: 1rem;
+  }
 }

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url("https://www.teahub.io/photos/full/17-170147_master-hand-and-crazy-hand-face.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scoreboard {
+    margin-top: 56px;
+}
+
+button {
+    padding: 8px;
+}
+h2 {
+    font-size: 64px;
+}
+
+#wisely-text {
+    font-size: 40px;
+}
+
+div > span {
+    font-size: 32px;
+}
+
+p {
+    padding: 16px;
+    font-size: 16px;
+    background-image: url("https://previews.123rf.com/images/flukesamed/flukesamed1404/flukesamed140400026/27372625-fuoco-fiamma-fiammata-per-banner-sfondo.jpg");
+    background-size: cover;
+  
+}
+
+button {
+    color: black;
+}
+
+.bold {
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+
+
