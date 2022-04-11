@@ -6,45 +6,72 @@
 }
 
 body {
-    background-image: url("https://www.teahub.io/photos/full/17-170147_master-hand-and-crazy-hand-face.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+   background-image: url("https://www.teahub.io/photos/full/17-170147_master-hand-and-crazy-hand-face.jpg");
+   background-size: cover;
+   width: 100%;
 }
 
-.scoreboard {
-    margin-top: 56px;
+h1 {
+    padding: 16px;
+    font-size: 64px;
+    color: rgb(143, 3, 3);
+    font-family: 'Press Start 2P', cursive;
 }
 
-button {
-    padding: 8px;
-}
 h2 {
     font-size: 64px;
+    color: rgb(184, 36, 36);
+
 }
 
 #wisely-text {
     font-size: 40px;
+    color: rgb(2, 2, 105);
+    font-style: italic;
 }
 
 div > span {
     font-size: 32px;
+    padding: 16px;
+    color: rgb(143, 143, 22);
+}
+
+#humanScore {
+    margin-right: 32px;
+}
+
+#top-section {
+    background-image: url("https://previews.123rf.com/images/flukesamed/flukesamed1404/flukesamed140400026/27372625-fuoco-fiamma-fiammata-per-banner-sfondo.jpg");
+    background-size: contain;
 }
 
 p {
-    padding: 16px;
-    font-size: 16px;
-    background-image: url("https://previews.123rf.com/images/flukesamed/flukesamed1404/flukesamed140400026/27372625-fuoco-fiamma-fiammata-per-banner-sfondo.jpg");
-    background-size: cover;
+    padding: 64px 16px;
+    font-size: 24px;
+    color: black;
   
+}
+#btns {
+    margin-top: 56px;
+    background-image: url("https://previews.123rf.com/images/flukesamed/flukesamed1404/flukesamed140400026/27372625-fuoco-fiamma-fiammata-per-banner-sfondo.jpg");
+    padding: 64px 16px;
+
 }
 
 button {
     color: black;
+    padding: 16px;
+    background-color: rgb(143, 3, 3);
 }
 
 .bold {
     font-weight: bold;
-    padding: 0 4px;
+    padding: 0 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 

@@ -1,50 +1,57 @@
-var botScore=0,
-	playerScore=0;
-document.getElementById("rock").onclick=playerThrowsRock;
-function playerThrowsRock(){
-	var botsWeapon="paper";//getRandomWeapon();
-	checkWhoWon(botsWeapon,"rock");
+var botScore = 0,
+  playerScore = 0;
+document.getElementById("rock").onclick = playerThrowsRock;
+function playerThrowsRock() {
+  var botsWeapon = getRandomWeapon();
+  checkWhoWon(botsWeapon, "rock");
 }
-function playerThrowsScissors(){
-
+document.getElementById("scissors").onclick = playerThrowsScissors;
+function playerThrowsScissors() {
+  var botsWeapon = getRandomWeapon();
+  checkWhoWon(botsWeapon, "scissors");
 }
-function playerThrowsPaper(){
-
+document.getElementById("paper").onclick = playerThrowsPaper;
+function playerThrowsPaper() {
+  var botsWeapon = getRandomWeapon();
+  checkWhoWon(botsWeapon, "paper");
 }
-function getRandomWeapon(){
-	var randomNumber=Math.random();
-	var botsWeapon="rock";
-	if(randomNumber<.33){
-		botsWeapon="scissors";
-	}
-	else if(randomNumber<.6666){
-		botsWeapon="paper";
-	}
-	return botsWeapon;
+document.getElementById("win").onclick = playerThrowsWin;
+function playerThrowsWin() {
+  displayCompleteMessage("Cheaters never win!");
 }
-function checkWhoWon(botsWeapon,playersWeapon){
-	if(botsWeapon==playersWeapon){
-		displayCompleteMessage("There was tie");
-	}
-	else if(
-		(botsWeapon=="scissors" && playersWeapon=="paper") ||
-		(botsWeapon=="paper" && playersWeapon=="rock") ||
-		(botsWeapon=="rock" && playersWeapon=="scissors")
-		){
-		increaseBotScore();
-	}
-	else{
-		increasePlayerScore();
-	}
+function getRandomWeapon() {
+  var randomNumber = Math.random();
+  var botsWeapon = "rock";
+  if (randomNumber < 0.33) {
+    botsWeapon = "scissors";
+  } else if (randomNumber < 0.6666) {
+    botsWeapon = "paper";
+  }
+  return botsWeapon;
 }
-function increaseBotScore(){
-	botScore+=1;
-	document.getElementById("computerScore").innerHTML=botScore;
-	displayCompleteMessage("Sorry, you're a loser");
+function checkWhoWon(botsWeapon, playersWeapon) {
+  if (botsWeapon == playersWeapon) {
+    displayCompleteMessage("There was tie");
+  } else if (
+    (botsWeapon == "scissors" && playersWeapon == "paper") ||
+    (botsWeapon == "paper" && playersWeapon == "rock") ||
+    (botsWeapon == "rock" && playersWeapon == "scissors")
+  ) {
+    increaseBotScore();
+  } else {
+    increasePlayerScore();
+  }
 }
-function increasePlayerScore(){
-
+function increaseBotScore() {
+  botScore += 1;
+  document.getElementById("computerScore").innerHTML = botScore;
+  displayCompleteMessage("Skynet wins");
 }
-function displayCompleteMessage(msg){
-	document.getElementById("status").innerHTML=msg;
+function increasePlayerScore() {
+  playerScore += 1;
+  document.getElementById("humanScore").innerHTML = playerScore;
+  displayCompleteMessage("Winner winner Chicken Dinner");
+}
+function displayCompleteMessage(msg) {
+  document.getElementById("status").innerHTML = msg;
 }
