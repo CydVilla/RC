@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.content section{
+    height: 200px;
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+    border: 1px solid black;
+
+}
+main > section, main > section + section section{
+    width: 50%;
+    height: 600px;
+    border: 1px solid black;
+    float: left;
+}
+main > section + section section{
+    height: 250px;
+}
+header li, header img, header span{
+    width: 8%;
+    float: left;
+}
+/* .mainImg{
+    height: 500px;
+    background: url('https://cafedelites.com/wp-content/uploads/2018/02/Best-Fudgiest-Brownies-IMAGE-1001.jpg');
+} */
